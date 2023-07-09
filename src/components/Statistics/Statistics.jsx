@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Notification from 'components/Notification/Notification';
 import PropTypes from 'prop-types';
 import { List, ListItem } from './Statistics.styled';
