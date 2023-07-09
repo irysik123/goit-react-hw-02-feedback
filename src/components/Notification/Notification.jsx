@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import { Message } from './Notification.styled';
 
 const Notification = ({message}) => (
-    <p>
+    <Message>
         {message}
-    </p>
+    </Message>
 )
 
 export default Notification;

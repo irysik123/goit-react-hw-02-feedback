@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
 import Notification from 'components/Notification/Notification';
 import PropTypes from 'prop-types';
+import { List, ListItem } from './Statistics.styled';
 
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
     <div>
         {!!positivePercentage?
-        <ul>
-            <li>
+        <List>
+            <ListItem>
                 Good: {good}
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
                 Neutral: {neutral}
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
                 Bad: {bad}
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
                 Total: {total}
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
                 Positive percentage: {positivePercentage}%
-            </li>
-        </ul> : <Notification message="There is no feedback"/>}
+            </ListItem>
+        </List> : <Notification message="There is no feedback"/>}
     </div>
 )
 
