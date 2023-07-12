@@ -40,7 +40,7 @@ class App extends Component {
           />
         </Section>
         <Section title="Statistics">
-          {!!this.countPositiveFeedbackPercentage() ? (
+          {this.countTotalFeedback() > 0 ? (
             <Statistics
               good={this.state.good}
               neutral={this.state.neutral}
